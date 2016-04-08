@@ -1,4 +1,4 @@
-			<!DOCTYPE html>
+				<!DOCTYPE html>
 			<html lang="en">
 			<head>
 			    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -160,11 +160,11 @@
 					}
 
 					.score-container:after {
-						content: "Score";
+						content: "分数";
 					}
 
 					.best-container:after {
-						content: "Best";
+						content: "最高分数";
 					}
 
 					p {
@@ -1300,7 +1300,7 @@
 						<p>
 						</p>
 						<div class="lower">
-							<a class="keep-playing-button">暂停游戏</a>
+							<a class="keep-playing-button">继续游戏</a>
 							<a class="retry-button">再来一次</a>
 							<div class="score-sharing"></div>
 						</div>
@@ -1747,7 +1747,7 @@
 
 					HTMLActuator.prototype.message = function (won) {
 						var type    = won ? "game-won" : "game-over";
-						var message = won ? "You win!" : "Game over!";
+						var message = won ? "您赢了!" : "游戏结束!";
 
 						if (typeof ga !== "undefined") {
 							ga("send", "event", "game", "end", type, this.score);
@@ -1774,7 +1774,7 @@
 						tweet.setAttribute("data-via", "gabrielecirulli");
 						tweet.setAttribute("data-url", "http://git.io/2048");
 						tweet.setAttribute("data-counturl", "http://gabrielecirulli.github.io/2048/");
-						tweet.textContent = "Tweet";
+						tweet.textContent = "分享到Twitter";
 
 						var text = "I scored " + this.score + " points at 2048, a game where you " +
 											 "join numbers to score high! #2048game";
